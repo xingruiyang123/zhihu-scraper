@@ -1,0 +1,21 @@
+# 运行时产物，不进版本库
+__pycache__/
+*.pyc
+*.pyo
+*.tmp
+*.log
+
+# 采集数据（体积大且随时变，只共享方法论与脚本）
+raw/
+data/
+交付/
+*.csv
+*.jsonl
+*.json
+!package.json
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
