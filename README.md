@@ -65,3 +65,25 @@ scripts/
 - 采集要有节制：串行、页间 1.5–3 秒。爆发式并发的唯一后果是被封几小时。
 - 换网络能立刻解封（实测手机热点最有效）。
 - 这是给内部研究用的，别拿去商用或大规模骚扰对方服务器。
+
+## 队友怎么获取
+
+```bash
+git clone https://github.com/xingruiyang123/zhihu-scraper.git
+```
+
+放进 agent 的 skills 目录即可。后续更新只要 `git pull`。
+
+## 维护者怎么更新
+
+改完直接推：
+
+```bash
+cd <这个目录>
+git add -A
+git commit -m "update: 说明改了什么"
+git push
+```
+
+需要同步到本机多个 agent 的 skills 目录时，再跑一次
+`sync_skills.py --only zhihu-scraper`（如果本机有这套下发机制）。
